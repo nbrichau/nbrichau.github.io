@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<title>Nelson Brichau Homepage</title>
-	<link rel="icon" href="icons/icon-512.png">
+	<link rel="icon" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,16 +14,16 @@
 				document.documentElement.style.setProperty("--main-bg-color", "#DDDDDD");
 				document.documentElement.style.setProperty("--second-bg-color", "#CCCCCC");
 				document.documentElement.style.setProperty("--font-color", "#000000");
-				document.documentElement.style.setProperty("--main-hollow-color", "rgba(256,256,256,0.2)");
-				document.documentElement.style.setProperty("--second-hollow-color", "rgba(0,0,0,0.2)");
+				document.documentElement.style.setProperty("--main-glow-color", "rgba(256,256,256,0.2)");
+				document.documentElement.style.setProperty("--second-glow-color", "rgba(0,0,0,0.2)");
 				document.getElementById("moon").style.display = "none";
 				document.getElementById("sun").style.display = "inherit";
 			} else {
 				document.documentElement.style.setProperty("--main-bg-color", "#222222");
 				document.documentElement.style.setProperty("--second-bg-color", "#333333");
 				document.documentElement.style.setProperty("--font-color", "#FFFFFF");
-				document.documentElement.style.setProperty("--main-hollow-color", "rgba(0,0,0,0.2)");
-				document.documentElement.style.setProperty("--second-hollow-color", "rgba(256,256,256,0.2)");
+				document.documentElement.style.setProperty("--main-glow-color", "rgba(0,0,0,0.2)");
+				document.documentElement.style.setProperty("--second-glow-color", "rgba(256,256,256,0.2)");
 				document.getElementById("moon").style.display = "inherit";
 				document.getElementById("sun").style.display = "none";
 			}
@@ -31,6 +31,7 @@
 			dark = !dark;
 		}
 	</script>
+<!-- SVG are from https://tablericons.com/ thanks ! -->
 </head>
 <body>
 	
@@ -38,19 +39,33 @@
 	<main>
 	<div>
 		<a href="https://github.com/nbrichau" target="_blank">
-			<img src="icons/github.png" alt="logo github">
+			<svg class="icon" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+			</svg>
 			<p>My Github Account</p>
 		</a>
 	</div>
 	<div>
 		<a href="https://www.curseforge.com/minecraft/mc-mods/vanilla-extension" target="_blank">
-			<img src="icons/minecraft.png" alt="logo minecraft">
+			<svg class="icon" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+				<line x1="12" y1="12" x2="20" y2="7.5" />
+				<line x1="12" y1="12" x2="12" y2="21" />
+				<line x1="12" y1="12" x2="4" y2="7.5" />
+			</svg>
 			<p>My Minecraft Mod</p>
 		</a>
 	</div>
 	<div>
 		<a href="resume.html">
-			<img src="icons/scroll.png" alt="logo scroll">
+			<svg class="icon" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M15 21h-9a3 3 0 0 1 -3 -3v-1h10v2a2 2 0 0 0 4 0v-14a2 2 0 1 1 2 2h-2m2 -4h-11a3 3 0 0 0 -3 3v11" />
+				<line x1="9" y1="7" x2="13" y2="7" />
+				<line x1="9" y1="11" x2="13" y2="11" />
+			</svg>
 			<p>My Resume</p>
 		</a>
 	</div>
@@ -64,6 +79,5 @@
 		<path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
 	</svg>
 	</main>
-	
 </body>
 </html>

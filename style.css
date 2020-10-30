@@ -1,9 +1,9 @@
 :root {
 	--main-bg-color: #222;
 	--second-bg-color: #333;
-	--font-color: white;
-	--main-hollow-color: rgba(0,0,0,0.2);
-	--second-hollow-color: rgba(256,256,256,0.2);
+	--font-color: #FFFFFF;
+	--main-glow-color: rgba(0,0,0,0.2);
+	--second-glow-color: rgba(256,256,256,0.2);
 }
 
 html {
@@ -36,11 +36,11 @@ div {
 	padding: 20px;
 	transition-duration: 0.3s;
 	border-radius: 10px;
-	box-shadow: 0px 0px 3px 5px var(--main-hollow-color);
+	box-shadow: 0px 0px 3px 5px var(--main-glow-color);
 }
 
 div:hover {
-	box-shadow: 0px 0px 3px 5px var(--second-hollow-color);
+	box-shadow: 0px 0px 3px 5px var(--second-glow-color);
 	transition-duration: 0.3s;
 }
 
@@ -52,16 +52,13 @@ a {
 	height: inherit;
 }
 
-img {
-	justify-content: center;
-	width: 100px;
-	height: 100px;
-}
-
-svg {
+#moon, #sun {
 	position: absolute;
 	left: 10px;
 	bottom: 10px;
+}
+svg {
+	stroke: var(--font-color);
 }
 
 @media screen and (max-width:812px) {
